@@ -5,12 +5,12 @@ local term_opts = { silent = true }
 local keymap = vim.api.nvim_set_keymap
 
 -- remap space as leader key
-keymap("", "<Space>", "<Nop>", opts)
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+-- keymap("", "<Space>", "<Nop>", opts)
+vim.g.mapleader = ","
+vim.g.maplocalleader = ","
 
 -- Normal Mode --
-keymap("n", "<leader>e", ":Ex<cr>", opts)
+keymap("n", "<leader>pv", ":Ex<cr>", opts)
 keymap("n", "J", "mzJ`z", opts)
 keymap("n", "<C-d>", "<C-d>zz", opts)
 keymap("n", "<C-u>", "<C-u>zz", opts)
